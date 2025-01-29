@@ -209,5 +209,28 @@ $(window).on('scroll', function() {
    $('.navbar').removeClass('active'); 
    $('#menu-toggle').removeClass('fa-times'); 
 });
+// Select elements
+const privacyPolicyLink = document.getElementById('privacy-policy-link');
+const popup = document.getElementById('popup');
+const overlayy = document.getElementById('overlayy');
+const closePopup = document.getElementById('close-popup');
 
+// Show popup on clicking Privacy Policy link
+privacyPolicyLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    popup.style.display = 'block';
+    overlayy.style.display = 'block';
+});
+
+// Close popup on clicking the close button
+closePopup.addEventListener('click', function () {
+    popup.style.display = 'none';
+    overlayy.style.display = 'none';
+});
+
+// Close popup when clicking on the overlayy
+overlayy.addEventListener('click', function () {
+    popup.style.display = 'none';
+    overlayy.style.display = 'none';
+});
 });
