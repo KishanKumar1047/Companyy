@@ -2020,15 +2020,19 @@ body{
     display: none;
     width: 90%;
     /* Responsive width */
-    max-width: 400px;
+    max-width: 600px;
     /* Max width for larger screens */
     text-align: center;
 }
 
 .popup h2 {
     margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
-
+.popup p{
+    font-size: 14px;
+}
 .popup .close-btn {
     margin-top: 20px;
     background: red;
